@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>فروشگاه تعاون (مدیریت حقدوست) - کاشمر</title>
+  <meta name="description" content="فروشگاه اینترنتی تعاون کاشمر به مدیریت حقدوست - خرید مستقیم کالاهای اساسی با قیمت منصفانه و کالابرگ فعال">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700;900&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Vazirmatn', Tahoma, sans-serif; }
+  </style>
+</head>
+<body class="bg-stone-50 text-stone-800 antialiased min-h-screen flex flex-col">
+
+  <!-- نوار بالای سایت -->
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-stone-200 shadow-sm">
+    <div class="bg-emerald-800 text-white text-xs py-2 px-4">
+      <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
+        <div class="flex items-center gap-2 font-medium">
+          <span class="bg-emerald-700 px-2 py-0.5 rounded text-[11px] font-bold">💥 کالابرگ فعال</span>
+          <span>کاشمر: فلکه قوژد، نبش سلمان فارسی ۳۴</span>
+        </div>
+        <div class="flex items-center gap-4 text-xs font-medium">
+          <a href="https://eitaa.com/tavvnhaghdost313H" target="_blank" class="hover:text-amber-300">کانال ایتا: tavvnhaghdost313H@</a>
+          <a href="tel:09351506418" class="font-bold hover:text-amber-300">مدیریت: ۰۹۳۵۱۵۰۶۴۱۸</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- منوی اصلی -->
+    <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <div class="w-11 h-11 rounded-xl bg-emerald-700 text-white flex items-center justify-center font-black text-xl">ت</div>
+        <div>
+          <h1 class="font-extrabold text-stone-900 text-lg">فروشگاه تعاون <span class="text-xs bg-amber-100 text-amber-800 px-1.5 py-0.5 rounded">حقدوست</span></h1>
+          <p class="text-[12px] text-stone-500">خرید مستقیم و حذف واسطه‌ها • کاشمر</p>
+        </div>
+      </div>
+      <div class="flex items-center gap-2">
+        <button onclick="toggleAdminModal()" class="px-3 py-2 text-xs font-bold text-emerald-800 bg-emerald-50 border border-emerald-200 rounded-lg hover:bg-emerald-100">
+          ورود مدیریت
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- بخش اصلی و بنر -->
+  <main class="flex-1 max-w-7xl w-full mx-auto px-4 py-6 space-y-6">
+    <div class="bg-gradient-to-r from-emerald-900 via-teal-900 to-stone-900 rounded-3xl p-6 sm:p-8 text-white shadow-xl relative">
+      <div class="max-w-2xl space-y-3 text-right">
+        <span class="bg-amber-400 text-stone-950 text-xs font-black px-2.5 py-1 rounded-md inline-block">خرید مطمئن و ارزان در کاشمر</span>
+        <h2 class="text-2xl sm:text-3xl font-black">خرید مستقیم و حذف واسطه‌ها، کالا به قیمت منصفانه</h2>
+        <p class="text-xs sm:text-sm text-stone-300 leading-relaxed">
+          با خرید مستقیم، خرید نقدی در حجم بالا و پایین آوردن حاشیه سود، سعی داریم انواع مواد غذایی، برنج باسماتی پاکستان، روغن‌های ۵ کیلویی و کلوچه خرمایی تازه را با ارزان‌ترین قیمت به دست شما برسانیم.
+        </p>
+      </div>
+    </div>
+
+    <!-- گرید محصولات -->
+    <div class="border-b border-stone-200 pb-3 flex justify-between items-center">
+      <h3 class="text-lg font-black text-stone-900">محصولات موجود در فروشگاه</h3>
+      <span class="text-xs text-stone-500">کالابرگ الکترونیکی در محل فعال است</span>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4" id="products-grid">
+      <!-- کارت ۱ -->
+      <div class="bg-white rounded-2xl border border-stone-200 p-4 flex flex-col justify-between shadow-sm space-y-3">
+        <div>
+          <div class="flex justify-between text-xs text-stone-500 mb-1">
+            <span class="bg-red-600 text-white text-[10px] font-bold px-1.5 py-0.5 rounded">💥 شارژ مجدد</span>
+            <span class="bg-emerald-700 text-white text-[10px] font-bold px-1.5 py-0.5 rounded">کالابرگ فعال</span>
+          </div>
+          <h4 class="font-bold text-sm text-stone-900">کلوچه خرمایی تازه شاه شکر</h4>
+          <p class="text-xs text-stone-500 mt-1">بار درجه یک و تازه، تولید روز با خرمای درجه یک دشتستان و آرد مرغوب.</p>
+        </div>
+        <div class="pt-2 border-t border-stone-100 flex items-center justify-between">
+          <span class="text-xs text-stone-500">قیمت هر کیلو:</span>
+          <span class="font-black text-emerald-800 text-base">۱۹۵,۰۰۰ تومان</span>
+        </div>
+      </div>
+
+      <!-- کارت ۲ -->
+      <div class="bg-white rounded-2xl border border-stone-200 p-4 flex flex-col justify-between shadow-sm space-y-3">
+        <div>
+          <div class="flex justify-between text-xs text-stone-500 mb-1">
+            <span class="bg-emerald-700 text-white text-[10px] font-bold px-1.5 py-0.5 rounded">کالابرگ فعال</span>
+            <span class="text-xs text-stone-400">سوپر باسماتی</span>
+          </div>
+          <h4 class="font-bold text-sm text-stone-900">برنج پاکستانی رویال (۱۰ کیلوگرم)</h4>
+          <p class="text-xs text-stone-500 mt-1">دانه‌بلند، بسیار خوش‌پخت و معطر مجلسی، خرید مستقیم و نقدی.</p>
+        </div>
+        <div class="pt-2 border-t border-stone-100 flex items-center justify-between">
+          <span class="text-xs text-stone-500">قیمت هر کیسه:</span>
+          <span class="font-black text-emerald-800 text-base">۵۸۵,۰۰۰ تومان</span>
+        </div>
+      </div>
+
+      <!-- کارت ۳ -->
+      <div class="bg-white rounded-2xl border border-stone-200 p-4 flex flex-col justify-between shadow-sm space-y-3">
+        <div>
+          <div class="flex justify-between text-xs text-stone-500 mb-1">
+            <span class="bg-emerald-700 text-white text-[10px] font-bold px-1.5 py-0.5 rounded">کالابرگ فعال</span>
+          </div>
+          <h4 class="font-bold text-sm text-stone-900">روغن مصرفی خانوار ۵ کیلویی</h4>
+          <p class="text-xs text-stone-500 mt-1">روغن خوراکی مصرفی بدون کلسترول مضر، با پخت یکدست زیر قیمت مصرف‌کننده.</p>
+        </div>
+        <div class="pt-2 border-t border-stone-100 flex items-center justify-between">
+          <span class="text-xs text-stone-500">قیمت حلب:</span>
+          <span class="font-black text-emerald-800 text-base">۳۳۵,۰۰۰ تومان</span>
+        </div>
+      </div>
+
+      <!-- کارت ۴ -->
+      <div class="bg-white rounded-2xl border border-stone-200 p-4 flex flex-col justify-between shadow-sm space-y-3">
+        <div>
+          <div class="flex justify-between text-xs text-stone-500 mb-1">
+            <span class="bg-emerald-700 text-white text-[10px] font-bold px-1.5 py-0.5 rounded">کالابرگ فعال</span>
+          </div>
+          <h4 class="font-bold text-sm text-stone-900">ماست همزده سون کاله (۲ کیلوگرم)</h4>
+          <p class="text-xs text-stone-500 mt-1">ماست پرچرب و یکدست سون، بافت خامه‌ای، تولید روز و خنک.</p>
+        </div>
+        <div class="pt-2 border-t border-stone-100 flex items-center justify-between">
+          <span class="text-xs text-stone-500">قیمت سطل:</span>
+          <span class="font-black text-emerald-800 text-base">۷۸,۰۰۰ تومان</span>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- فوتر -->
+  <footer class="bg-stone-900 text-stone-300 py-6 border-t border-stone-800 text-xs">
+    <div class="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row justify-between items-center gap-4">
+      <div>آدرس: کاشمر، فلکه قوژد، نبش سلمان فارسی ۳۴، فروشگاه تعاون (حقدوست)</div>
+      <div class="text-stone-500">تماس: ۰۹۳۵۱۵۰۶۴۱۸ - ۰۹۱۵۸۳۰۴۷۳۷</div>
+    </div>
+  </footer>
+
+  <!-- مودال ساده مدیریت -->
+  <div id="admin-modal" class="fixed inset-0 bg-black/60 hidden items-center justify-center p-4 z-50">
+    <div class="bg-white w-full max-w-sm rounded-2xl p-6 shadow-2xl text-right space-y-4">
+      <h3 class="font-black text-base text-stone-900">پنل شارژ کالا (مدیریت حقدوست)</h3>
+      <p class="text-xs text-stone-500">برای شارژ موجودی کلوچه خرمایی یا برنج، مقدار جدید را وارد کنید:</p>
+      <input type="text" placeholder="نام کالا یا شماره بار جدید" class="w-full border border-stone-300 rounded-lg p-2 text-xs">
+      <div class="flex gap-2">
+        <button onclick="alert('بار جدید ثبت شد'); toggleAdminModal()" class="flex-1 bg-emerald-700 text-white font-bold py-2 rounded-lg text-xs">ثبت شارژ</button>
+        <button onclick="toggleAdminModal()" class="px-3 bg-stone-200 text-stone-700 font-bold py-2 rounded-lg text-xs">بستن</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function toggleAdminModal() {
+      const modal = document.getElementById('admin-modal');
+      modal.classList.toggle('hidden');
+      modal.classList.toggle('flex');
+    }
+  </script>
+</body>
+</html>

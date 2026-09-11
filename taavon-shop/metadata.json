@@ -1,0 +1,6 @@
+{
+  "name": "فروشگاه تعاون (مدیریت حقدوست)",
+  "description": "فروشگاه اینترنتی تعاون کاشمر به مدیریت حقدوست - خرید مستقیم کالاهای اساسی، برنج، روغن، لبنیات، کلوچه خرمایی تازه و تنقلات با کالابرگ فعال و قیمت منصفانه",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
